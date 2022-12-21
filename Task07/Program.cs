@@ -4,3 +4,15 @@
 // 456 -> 6
 // 782 -> 2
 // 918 -> 8
+
+Console.Write("Введите трехзначное число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+if (a >= 100 && a <= 999)
+{
+    int b = a % 10;
+    Console.Write($"последняя цифра введенного числа = {b}");
+}
+else
+{
+    Console.Write("Проверьте введенное число");
+}
