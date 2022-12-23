@@ -7,7 +7,7 @@
 // 4 | 64
 // 5 | 125
 
-Console.WriteLine("Введите натуральное число, больше нуля: ");
+Console.Write("Введите натуральное число, больше нуля: ");
 int numberA = Convert.ToInt32(Console.ReadLine());
 
 if (numberA <= 0) Console.WriteLine("Вы ввели число не удовлетворяющие условиям");
