@@ -49,6 +49,18 @@ Console.WriteLine(res == -1 ? "В выбранном числе третей ц�
 
 int ThirdGrade(int num)
 {
+// более короткий код
+// if (num >99)
+// {
+//     while (num > 999)
+//     {
+//         num = num / 10;
+//     }
+//     return num % 10;
+// }
+// else return -1;
+// }
+
     int result = 0;
     if (num < 100)
     {
