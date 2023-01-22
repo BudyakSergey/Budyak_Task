@@ -13,14 +13,14 @@ int[] CreateArrayRndInt(int size, int min, int max)
         arr[i] = rnd.Next(min, max + 1);
     }
     return arr;
- }
+}
 
 void PrintArray(int[] arr)
 {
     Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i < arr.Length - 1) Console.Write(arr[i] + ",");
+        if (i < arr.Length - 1) Console.Write(arr[i] + ", ");
         else Console.Write(arr[i]);
     }
     Console.WriteLine("]");
@@ -31,7 +31,7 @@ int SumOfOddElements(int[] arr)
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i] % 2 == 0) count = count + arr [i] ;
+        if (i % 2 != 0) count = count + arr[i];
     }
     return count;
 }
@@ -44,5 +44,5 @@ Console.Write("Введите максимальное значение одно
 int maxArray = Convert.ToInt32(Console.ReadLine());
 int[] array = CreateArrayRndInt(size, minArray, maxArray);
 PrintArray(array);
-int sumOfOddElements=SumOfOddElements(array);
+int sumOfOddElements = SumOfOddElements(array);
 Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях = {sumOfOddElements}");
