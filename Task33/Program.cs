@@ -25,6 +25,7 @@ void PrintArray(int[] arr)
     }
     Console.WriteLine("]");
 }
+
 int[] array = CreateArrayRndInt(15, 1, 9);
 bool IsExist(int[] arr, int num)
 {
