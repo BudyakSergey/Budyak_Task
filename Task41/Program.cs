@@ -9,7 +9,6 @@ int size = Convert.ToInt32(Console.ReadLine());
 if (size < 0)
 {
     Console.WriteLine($"Количество вводимых чисел должно быть больше или равно 0");
-
 }
 else
 {
@@ -25,7 +24,6 @@ int[] CreateArrayRndIntAndPositiveNumber(int size)
         Console.Write("Введите число: ");
         arr[i] = Convert.ToInt32(Console.ReadLine());
     }
-    // return arr;
     int[] result = new int[1];
     for (int i = 0; i < arr.Length; i++)
     {
